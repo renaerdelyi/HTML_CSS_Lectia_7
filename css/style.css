@@ -1,0 +1,255 @@
+:root {
+  --orange: #ff6c00;
+  --white: #ffffff;
+  --light-black: #9da4bd;
+  --black: #303030;
+  --primary-font: 'Open sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+html {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*stilizare pentru header*/
+.header {
+  margin-bottom: -86px;
+  padding-top: 30px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__logo {
+  background-color: var(--white);
+}
+.header__navigation ul {
+  display: flex;
+  gap: 40px;
+}
+.header__navigation a {
+  text-decoration: none;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--white);
+}
+.header__navigation a:hover {
+  color: var(--orange);
+}
+.header__info a {
+  text-decoration: none;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  color: var(--white);
+}
+.button {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: transparent;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: 1px solid var(--orange);
+  border-radius: 25px;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+/*stilizare pentru hero section*/
+.hero-section {
+  background-color: #303030;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-section .container {
+}
+.hero-section__subtitle {
+  font-size: 11px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  line-height: 14px;
+  color: var(--light-black);
+}
+.hero-section__title {
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  color: var(--white);
+}
+.hero-section__text {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--light-black);
+}
+/*stilizare pentru about section*/
+.about {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__images {
+  display: flex;
+  flex: 1;
+  gap: 30px;
+}
+.about__image {
+  width: 270px;
+  height: 445px;
+}
+.about__info {
+  flex: 1;
+}
+.about__subtitle {
+  font-size: 11px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  line-height: 14px;
+  color: var(--black);
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+}
+.about__title {
+  font-size: 42px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--black);
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+.about__text {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--black);
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+.about__text-smaller {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--black);
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+.about__button {
+  color: var(--black);
+  margin-top: 40px;
+}
+/*stilizare pentru prices*/
+.services {
+  background-color: var(--black);
+  color: var(--light-black);
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.service__container {
+  display: flex;
+}
+.services__subtitle {
+  font-size: 11px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  line-height: 14px;
+  color: var(--light-black);
+  margin-bottom: 20px;
+}
+.services__title {
+  font-size: 42px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  line-height: 14px;
+  color: var(--white);
+  margin-bottom: 46px;
+}
+.services__list {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--light-black);
+  flex: 1;
+  background-color: #555555;
+  padding: 28px;
+}
+
+.services__description {
+  margin-bottom: 20px;
+}
+.services__buttom {
+  margin-top: 48px;
+}
+/*stilizare pentru reviews*/
+.reviews__number {
+  font-size: 42px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  line-height: 57px;
+  color: var(--black);
+}
+.reviews sup {
+  color: #ff6c00;
+}
+.reviews__info,
+.reviews__subtitle {
+  font-size: 11px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  line-height: 14px;
+  color: var(--black);
+}
+.reviews__title {
+  font-size: 42px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  line-height: 49px;
+  color: #303030;
+}
+.reviews__text {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 30px;
+  color: #555555;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
