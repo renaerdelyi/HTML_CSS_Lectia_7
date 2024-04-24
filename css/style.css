@@ -81,11 +81,20 @@ a {
   background-color: var(--orange);
 }
 /*stilizare pentru hero section*/
+/*background: rgba(25, 28, 38, 0.2);
+*/
 .hero-section {
-  background-color: #303030;
   height: 100vh;
   display: flex;
   align-items: center;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.8)
+    ),
+    url(../images/hero-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .hero-section .container {
 }
@@ -95,6 +104,15 @@ a {
   font-weight: 600;
   line-height: 14px;
   color: var(--light-black);
+}
+.hero-section__subtitle::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: var(--light-black);
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 .hero-section__title {
   font-family: var(--secondary-font);
@@ -141,6 +159,15 @@ a {
   margin-bottom: 20px;
   letter-spacing: 0.1em;
 }
+.about__subtitle::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background: var(--black);
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
 .about__title {
   font-size: 42px;
   font-family: var(--secondary-font);
@@ -175,9 +202,13 @@ a {
 /*stilizare pentru prices*/
 .services {
   background-color: var(--black);
-  color: var(--light-black);
+  background-image: url(../images/hero-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 130px;
   padding-bottom: 130px;
+  color: var(--light-black);
+  opacity: 8 0%;
 }
 .service__container {
   display: flex;
@@ -189,6 +220,15 @@ a {
   line-height: 14px;
   color: var(--light-black);
   margin-bottom: 20px;
+}
+.services__subtitle::before {
+  content: '';
+  width: 60px;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--light-black);
+  margin-right: 20px;
+  vertical-align: middle;
 }
 .services__title {
   font-size: 42px;
@@ -205,8 +245,8 @@ a {
   line-height: 30px;
   color: var(--light-black);
   flex: 1;
-  background-color: #555555;
   padding: 28px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .services__description {
